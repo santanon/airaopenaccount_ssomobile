@@ -48,7 +48,7 @@ $color-textblack80: #00000080;
 .openaccount-wrapper{
     font-family: $font-bold;
     position: relative;
-    background-color: #F1F1F1;
+    background-color: #000;
     padding-top: 40px;
     padding-left: 20px;
     padding-right: 20px;
@@ -63,14 +63,14 @@ $color-textblack80: #00000080;
         @include box-sizing(border-box);
     }
     .border-default{
-        border: 1px solid #66666610;
+        border: 1px solid #666;
         margin: 0 0 25px;
     }
     .title-topic{
         font-family: $font-bold;
         font-size: 32px;
         line-height: 39px;
-        color: #666666;
+        color: #fff;
         margin-bottom: 25px;
         &.color-main{
             color: $color-main;
@@ -83,7 +83,7 @@ $color-textblack80: #00000080;
         font-family: $font-bold;
         font-size: 24px;
         line-height: 33px;
-        color: #000;
+        color: #fff;
         margin: 0;
     }
     .list{
@@ -93,7 +93,7 @@ $color-textblack80: #00000080;
             font-family: $font-bold;
             font-size: 24px;
             line-height: 33px;
-            color: #000;
+            color: #fff;
             margin-bottom: 10px;
             &:last-child{
                 margin-bottom: 0;
@@ -108,14 +108,14 @@ $color-textblack80: #00000080;
             font-family: $font-bold;
             font-size: 24px;
             line-height: 26px;
-            color: #000;
+            color: #666;
             padding-left: 20px;
             position: relative;
             &::before{
                 content: ">";
                 display: block;
                 position: absolute;
-                color: #000;
+                color: #666;
                 left: 0;
                 top: -2px;
             }
@@ -127,7 +127,7 @@ $color-textblack80: #00000080;
             font-family: $font-bold;
             font-size: 24px;
             line-height: 26px;
-            color: #000000;
+            color: #fff;
             opacity: 0.8;
             .req{
                 color: #D02E26;
@@ -137,14 +137,14 @@ $color-textblack80: #00000080;
                 font-size: 20px;
                 line-height: 24px;
                 font-weight: 700;
-                color: #000;
+                color: #fff;
             }
         }
         .sub-field{
             font-family: 'Tahoma';
             font-size: 20px;
             line-height: 24px;
-            color: #000;
+            color: #fff;
             .req{
                 color: #D02E26;
             }
@@ -156,7 +156,7 @@ $color-textblack80: #00000080;
             font-size: 24px;
             line-height: 26px;
             color: #000000;
-            opacity: 0.5;
+            //opacity: 0.5;
             border: 1px solid #666;
             padding: 0 15px;
             width: 100%;
@@ -168,7 +168,7 @@ $color-textblack80: #00000080;
             font-family: $font-bold;
             font-size: 24px;
             line-height: 26px;
-            color: #000;
+            color: #fff;
             margin: 5px 0;
         }
         .group-inp{
@@ -196,7 +196,7 @@ $color-textblack80: #00000080;
         .text{
             font-size: 24px;
             line-height: 26px;
-            color: #00000099;
+            color: #666;
         }
         input[type="checkbox"] + label{
             display: flex;
@@ -211,7 +211,7 @@ $color-textblack80: #00000080;
         }
         input[type="checkbox"]:checked + label.text {
             background-image: url('../images/icon/inp_checkbox_checked.svg');
-            color: #000000;
+            color: #fff;
         }
         input[type="radio"] + label{
             display: flex;
@@ -227,7 +227,7 @@ $color-textblack80: #00000080;
         }
         input[type="radio"]:checked + label.text {
             background-image: url('../images/icon/inp_radio_checked.svg');
-            color: #000000;
+            color: #fff;
         }
     }
     
@@ -247,9 +247,9 @@ $color-textblack80: #00000080;
                 font-family: $font-bold;
                 font-size: 24px;
                 line-height: 26px;
-                color: #66666634;
+                color: #666;
                 padding: 7px 17px;
-                border: 1px solid #66666634;
+                border: 1px solid #666;
                 border-radius: 24px;
                 text-transform: uppercase;
                 margin-right: 14px;
@@ -290,6 +290,9 @@ $color-textblack80: #00000080;
         margin-bottom: 30px;
         .field-input{
             margin-bottom: 0;
+            .title-field{
+                color: #000;
+            }
             .inp-text{
                 border: none;
                 font-size: 48px;
@@ -336,7 +339,7 @@ $color-textblack80: #00000080;
             font-family: 'Tahoma';
             font-size: 20px;
             line-height: 24px;
-            color: #000;
+            color: #fff;
             font-weight: 700;
             &.text-xl{
                 font-size: 24px;
@@ -355,14 +358,14 @@ $color-textblack80: #00000080;
             font-family: $font-bold;
             font-size: 24px;
             line-height: 26px;
-            color: #000;
+            color: #fff;
             margin: 25px 0 !important;
             &.text-xl{
                 font-family: 'Tahoma';
                 font-size: 20px;
                 line-height: 24px;
                 font-weight: 700;
-                color: #000;
+                color: #fff;
                 margin: 25px 0 !important;
             }
         }
@@ -391,8 +394,7 @@ $color-textblack80: #00000080;
             &.text-left{
                 max-width: 700px;
                 padding-right: 30px;
-                color: #000000;
-                opacity: 0.8;
+                color: #666;
             }
             &.text-right{
                 //padding-left: 30px;
@@ -428,7 +430,7 @@ $color-textblack80: #00000080;
             font-family: 'Tahoma';
             font-size: 20px;
             line-height: 24px;
-            color: #000;
+            color: #fff;
             span{
                 font-family: $font-bold;
                 font-size: 24px;
@@ -451,7 +453,7 @@ $color-textblack80: #00000080;
                 font-family: $font-bold;
                 font-size: 32px;
                 line-height: 39px;
-                color: #000;
+                color: #fff;
             }
         }
         .image{
